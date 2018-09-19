@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <section>
+                <h6>A brief JS surviving guide for java devs</h6>
+                <img data-src="img/intro.jpg"/>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ### History of JavaScript
+                    - 1995 Netscape hired Brendan Eich ( Schema/Lisp developer )
+                    - It design in 10 days, to be easy a lot of things was left unlocked
+                    - First called Mocha, LiveScript than made the deal with Sun and called it JavaScript
+                    - 1996 ECMA standardization
+                    - 2005 Ajax
+                    - 2009 ECMAScript 5, NodeJS, MongoDB
+                    - 2015 ES6 - classes, modules
+                </textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    #### Designed for beginners
+                    ![...](img/hide_and_seek.jpg)
+                </textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ###### Auto-insertion ;
+                    ```javascript
+                        var a = 10;
+                        var b = 20
+                        var c = a + b
+                    ```
+
+                     ...will be interpreted as
+
+                    ```javascript
+                        var a = 10;
+                        var b = 20;
+                        var c = a + b;
+                     ```
+                </textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ![...](img/two_types.jpg)
+                </textarea>
+            </section>
+            <section data-markdown="mds/autoinsertion.md">
+            </section>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+</body>
+</html>
