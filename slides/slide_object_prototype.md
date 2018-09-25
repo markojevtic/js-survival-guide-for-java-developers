@@ -1,6 +1,7 @@
 ###### Method prototype
 
 * Prototype object methods 
+
 ```javascript
 function Person(name) {
     this.name = name;

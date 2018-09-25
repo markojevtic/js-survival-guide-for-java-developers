@@ -1,6 +1,7 @@
 ###### Prototype inheritance
 
 * Prototype inheritance
+
 ```javascript
 function Programmer(name) {
     this.name = name;

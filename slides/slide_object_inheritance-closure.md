@@ -1,6 +1,7 @@
 ###### Inheritance
 
-* Inherit other function/type 
+* Inherit other function/type - module pattern
+ 
 ```javascript
 function Programmer(name) {
     Person.call(this, name);
